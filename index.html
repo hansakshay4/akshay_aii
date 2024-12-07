@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f4f4f4;
@@ -18,13 +18,25 @@
             color: #fff;
             text-align: center;
             padding: 1rem;
+            border-radius: 5px;
         }
-        .product-description {
+        .content-section {
             background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-top: 20px;
+        }
+        .use-cases, .pricing {
+            display: flex;
+            justify-content: space-between;
+        }
+        .use-case, .price-plan {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -34,7 +46,7 @@
         <p>Intelligent AI Agent for Next-Generation Solutions</p>
     </header>
     
-    <div class="product-description">
+    <div class="content-section">
         <h2>Product Overview</h2>
         <p>AkshayAI is a cutting-edge AI agent designed to revolutionize how businesses and individuals interact with artificial intelligence. Our advanced machine learning algorithms provide intelligent, context-aware solutions across multiple domains.</p>
         
@@ -45,6 +57,57 @@
             <li>Multi-domain Expertise</li>
             <li>Scalable and Customizable Solutions</li>
         </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>Use Cases</h2>
+        <div class="use-cases">
+            <div class="use-case">
+                <h3>Business</h3>
+                <p>Streamline customer support, automate repetitive tasks, and gain actionable insights.</p>
+            </div>
+            <div class="use-case">
+                <h3>Education</h3>
+                <p>Personalized learning assistance, adaptive tutoring, and intelligent content recommendations.</p>
+            </div>
+            <div class="use-case">
+                <h3>Research</h3>
+                <p>Advanced data analysis, pattern recognition, and predictive modeling.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>Pricing</h2>
+        <div class="pricing">
+            <div class="price-plan">
+                <h3>Basic</h3>
+                <p>$49/month</p>
+                <ul>
+                    <li>Basic NLP features</li>
+                    <li>Limited API calls</li>
+                    <li>Community support</li>
+                </ul>
+            </div>
+            <div class="price-plan">
+                <h3>Pro</h3>
+                <p>$199/month</p>
+                <ul>
+                    <li>Advanced NLP features</li>
+                    <li>Unlimited API calls</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+            <div class="price-plan">
+                <h3>Enterprise</h3>
+                <p>Custom Pricing</p>
+                <ul>
+                    <li>Full customization</li>
+                    <li>Dedicated support</li>
+                    <li>Advanced security</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
